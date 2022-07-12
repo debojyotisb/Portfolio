@@ -291,10 +291,41 @@ background: var(--nav-bg);
 }
 .bio-progress-bar span{
     position: absolute;
-    top: 1.8rem;
+    top: 1.6rem;
+    left: 46%;
     width: 4rem;
-    height: 2rem;
+    height: 2.5rem;
+    text-align: center;
     background: var(--helper);
-    color: var(--white);
+    color: var(--black);
+}
+.bio-progress-2 span{
+    left: 86%;
+}
+.bio-progress-3 span{
+    left: 76%;
+}
+.bio-progress-4 span{
+left: 56%;
+}
 
+/* to create a caret */
+.bio-progress-bar::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 48%;
+    border: 0.8rem solid var(--helper);
+    border-color: transparent;
+    border-bottom-color: var(--helper);
+}
+.bio-progress-2::after{
+    left: 88%;
+}
+.bio-progress-3::after{
+    left: 78%;
+}
+.bio-progress-4::after{
+left: 58%;
 }
