@@ -34,7 +34,7 @@ h1,
 h2,
 h3,
 h4 {
-     font-family: 'Poppins', sans-serif;
+     font-family: cursive;
 }
 
 h1{
@@ -64,7 +64,7 @@ li{
 .header{
 padding: 0 4.8rem;
 height: 6.8rem;
-background-color: var(--nav-bg);
+background-color: var(--para);
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -79,6 +79,7 @@ border-bottom: 0.1px solid var(--para);
     gap: 4.8rem;
 
 }
+
 .navbar-link:link,
 .navbar-link:visited{
     display: inline-block;
@@ -87,8 +88,9 @@ border-bottom: 0.1px solid var(--para);
     font-weight: 500;
     text-transform: uppercase;
     color: var(--black);
-    font-family: 'Poppins', sans-serif;
+    font-family: cursive;
     transition: color 0.3s linear;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
 }
 
 .navbar-link:hover,
@@ -178,7 +180,7 @@ box-shadow: 0 2rem 2rem 0 rgb(67, 65, 95);
 /*hero section start */
 
 .section-hero{
-    background-color: var(--bg);
+    background-color: var(--whitelow);
     border-bottom: 0.1rem  solid var(--para);
     
 }
@@ -221,7 +223,7 @@ box-shadow: 0 2rem 2rem 0 rgb(67, 65, 95);
 /*bio-data section */
 
 .section-bio{
-background: var(--nav-bg);
+background: var(--white);
 }
 
 .bio-data{
@@ -230,7 +232,7 @@ background: var(--nav-bg);
     padding: 1%;
     margin-bottom: 0%;
     padding-bottom: 1%;
-    background: var();
+    background: var(--whitelow);
    /* justify-content: space-around;
     flex-direction: column;*/
 }
@@ -440,7 +442,7 @@ left: 58%;
 } */
 .section-footer h3{
     color: var(--white);
-    margin-bottom: 4rem;
+    margin: 7rem 5rem;
 }
 .f-about,
 .f-about p{
@@ -453,6 +455,7 @@ font-size: 1.8 rem;
     flex-direction: column;
     gap: 1.8rem;
     justify-content: center;
+    margin: -5rem;
 }
 
 .f-links li,
@@ -467,29 +470,7 @@ font-size: 1.8 rem;
 }
 .section-social-icon{
     text-align: center;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
 
 
 
