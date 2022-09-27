@@ -122,7 +122,8 @@ border-bottom: 0.1px solid var(--para);
 .grid-four-column{
     grid-template-columns: repeat(4, 1fr);
 }
-.btn{
+
+/* .btn{
     background:var(--gradient);
     padding: 1.6rem 3.2rem;
     border-radius: 3%;
@@ -137,11 +138,51 @@ border-bottom: 0.1px solid var(--para);
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
-}
-.btn:hover,
+} */
+
+/* .btn:hover,
 .btn:active{
 box-shadow: 0 2rem 2rem 0 rgb(67, 65, 95);
+} */
+
+
+.btn{
+    background-color: pink;
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    color: #031425;
+    text-decoration: none;
+    position:absolute;
+    overflow:clip;
 }
+
+.btn::before{
+    content: "";
+    position: absolute;
+    background-color: orangered;
+    width: 0px;
+    height: 0px;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+
+}
+.btn span{
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+}
+
+
+.btn:hover::before{
+    width: 400px;
+    height: 400px;
+}
+
+
 
 .common-heading{
     font-size: 2.8rem;
@@ -193,7 +234,8 @@ box-shadow: 0 2rem 2rem 0 rgb(67, 65, 95);
 .hero-top-data{
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     color: var(--helper);
     justify-content:center;
     align-items: center;
