@@ -399,6 +399,16 @@ background: var(--white);
     background:var(--helper);
     border-top-left-radius: 70%;
 }
+.bio-progress-5::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: inherit;
+    background:var(--helper);
+    border-top-left-radius: 70%;
+}
 .bio-progress-bar span{
     position: absolute;
     top: 1.6rem;
@@ -418,6 +428,9 @@ background: var(--white);
 .bio-progress-4 span{
 left: 56%;
 }
+.bio-progress-5 span{
+    left: 57%;
+    }
 
 /* to create a caret */
 .bio-progress-bar::after {
@@ -439,7 +452,9 @@ left: 56%;
 .bio-progress-4::after{
 left: 58%;
 }
-
+.bio-progress-5::after{
+    left: 59%;
+    }
 /* to create freelancing */
 .section-freelancing {
     background-image: url(../Images/imgTableTop.jpg);
