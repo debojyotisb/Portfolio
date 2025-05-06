@@ -4,268 +4,276 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Debojyoti's profile</title>
+    <title>Debojyoti's Profile</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
    <header class="header">
-        <img src="Images/dslogo.jpg" alt="dslogo" class="logo" />
+        <!-- <img src="Images/dslogo.jpg" alt="dslogo" class="logo" /> -->
 
-        <!--navbar scetion-->
+        <a href="https://www.linkedin.com/in/debojyoti-suklabaidya-696a86219" target="_blank" class="profile-link">
+            <img src="./Images/profile2.jpg" alt="Profile Picture" class="profile-picture" />
+        </a>
+
+        <h3 class="logo" data-aos="fade-right"><span>Debojyoti Suklabaidya</span></h3>
+
+        <!-- Navbar Section -->
         <nav class="navbar">
+
+            <!-- Hamburger Menu Checkbox -->
+            <input type="checkbox" id="check" class="hamburger-checkbox">
+            <label for="check" class="checkbtn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </label>
+
             <ul class="navbar-lists">
                 <li><a href="#" class="navbar-link home-link">Home</a></li>
-                <li><a href="about.html" class="navbar-link about-link">About</a></li>
-                <li><a href="education.html" class="navbar-link education-link">Education</a></li>
-                <li><a href="projects.html" class="navbar-link projects-link">projects</a></li>
-                <li><a href="contact.html" class="navbar-link contact-link">Contact</a></li>
-                
+                <li><a href="#about" class="navbar-link about-link">About</a></li>
+                <li><a href="#projects" class="navbar-link projects-link">Projects</a></li>
+                <li><a href="#contact" class="navbar-link contact-link">Contact</a></li>
+
             </ul>
-
         </nav>
-
    </header>
-   <!-- main section start -->
+
+   <!-- Main Section Start -->
    <main>
     <section class="section-hero section">
         <div class="container grid grid-two-column">
-            <div class="section-hero-data">
-                <p class="hero-top-data">
-                    Hi, this is 
-                </p>
-                <h1 class="hero-heading">Debojyoti's website</h1>
-                <p class="hero-para">
-                    I'm Debojyoti Suklabaidya. A frontend Developer.
-                </p>
-                <div>
-                    <a href="/contact.html" class="btn hireme-btn"><span>Hire me</span></a>
-                </div>
+          <div class="section-hero-data">
+            <div>
+              <p class="hero-top-data">Front-End Developer</p>
             </div>
-            <!-- hero section right side -->
-            <div class="section-hero-image"></div>
-            <img src="Images/profile.jpg" alt="this is me Debojyoti Suklabaidya" class="hero-img">
+    
+            <h1 class="hero-heading">
+              Code is the poetry of <br />logical minds.
+            </h1>
+            <p class="hero-para">
+              I design and code simple yet beautiful websites and I love what I do.
+            </p>
+            <div>
+              <a href="#contact" class="btn hireme-btn">Let's Chat!</a>
+            </div>
+    
+            <div class="container grid grid-two-column">
+              <div class="card">
+                <h3 class="card-h3">1</h3>
+                <p class="card-p"> Year <br> Experience</p>
+              </div>
+              <div class="card">
+                <h3 class="card-h3">10+</h3>
+                <p class="card-p"> Completed <br> Projects</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- New Hero Section Design -->
+          <div class="section-hero-design">
+            <svg class="background-svg" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="400" cy="300" r="300" fill="url(#gradient)" filter="url(#blur)" />
+              <defs>
+                <radialGradient id="gradient" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#ff7eb3" />
+                  <stop offset="100%" stop-color="#ff758c" />
+                </radialGradient>
+                <filter id="blur" x="0" y="0" width="100%" height="100%">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="30" />
+                </filter>
+              </defs>
+            </svg>
+    
+            <div class="icons">
+              <div class="icon react-icon">
+                <ion-icon name="logo-react"></ion-icon>
+              </div>
+              <div class="icon node-icon">
+                <ion-icon name="logo-nodejs"></ion-icon>
+              </div>
+              <div class="icon js-icon">
+                <ion-icon name="logo-javascript"></ion-icon>
+              </div>
+              <div class="icon html-icon">
+                <ion-icon name="logo-html5"></ion-icon>
+              </div>
+              <div class="icon css-icon">
+                <ion-icon name="logo-css3"></ion-icon>
+              </div>
             </div>
 
+            <!-- Skill Popup Modal -->
+            <div class="skill-popup" id="skillPopup">
+              <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">×</span>
+                <h2 id="skillName">React</h2>
+                <div class="progress-ring">
+                  <svg width="120" height="120">
+                    <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+                    <circle class="ring-progress" id="progressCircle" cx="60" cy="60" r="50"></circle>
+                  </svg>
+                  <span id="progressText">75%</span>
+                </div>
+                <p id="skillDescription">Intermediate level with strong understanding of hooks, component lifecycle, and CSS, CSS Frameworks for styling.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+       <!-- About Section --> 
+       <section id="about" class="section-about section">
+           <div class="container grid grid-two-column">
+               <div class="about-image">
+                   <img src="Images/software-engineer.png" alt="About Me">
+               </div>
+               <div class="about-content">
+                   <h2 class="common-heading" data-animate="fade-in-right">Introduce</h2>
+                   <p>
+                    Hello! I'm <span class="my-name-about">Debojyoti Suklabaidya</span>, a passionate and self-motivated Frontend Developer with expertise in designing, developing, and managing dynamic and user-friendly websites. With a solid foundation in HTML, CSS, JavaScript, and experience in modern technologies like React.js and Node.js, I strive to craft engaging web experiences that solve real-world problems. <br> My journey in web development has been fueled by curiosity, dedication, and the drive to build impactful digital solutions.
+                   </p>
+                   <p>
+                       Beyond coding, I am an enthusiastic learner, exploring new technologies and trends in the ever-evolving tech landscape.
+                   </p>
+                   <p>
+                    I have successfully completed The Web Developer Bootcamp 2023 on Udemy, where I honed my skills in modern web development practices, earning the <br><b>
+                        Credential ID: UC-5855c69b-3aa6-4662-a581-0-482935/5/7 
+                    </b><br>
+                    This program empowered me to deepen my understanding of front-end and back-end technologies and create efficient and responsive web applications.
+                   </p>
+               </div>
+           </div>
+       </section>
+
+       <!-- Freelancing Section -->
+       <section class="section section-freelancing">
+           <div class="overlay"></div>
+           <div class="container">
+               <h2>I am <span class="freelancingAvailable" data-animate="drop-in">available</span> for freelancing</h2>
+               <p>I am available for freelancing and eager to collaborate on projects tailored to your needs. While I am new to freelancing, I bring a strong work ethic, dedication, and a passion for delivering quality results. I am committed to giving my best effort to ensure your project's success.</p>
+               <a href="#contact" class="btn" data-aos="fade-up" data-aos-delay="400"><span>Send Message   </span></a>
+           </div>
+       </section>
+
+       <!-- Projects Section -->
+        <section id="projects" class="section-projects section">
+            <div class="container grid grid-two-column">
+                <div class="PCard PCard1" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Project 1</h3>
+                    <p>Short description of project 1.</p>
+                </div>
+                <div class="PCard PCard2" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Project 2</h3>
+                    <p>Short description of project 2.</p>
+                </div>
+                <div class="PCard PCard3" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Project 3</h3>
+                    <p>Short description of project 3.</p>
+                </div>
+                <div class="PCard PCard4" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Project 4</h3>
+                    <p>Short description of project 4.</p>
+                </div>
+            </div>
+            <div class="button-container" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://debojyotisb.github.io/Projects/" class="btn">Explore Projects</a>
+            </div>
+        </section>
+
+    
+
+
+       <!-- Contact Section -->
+       <section id="contact" class="section-contact section">
+        <div class="container">
+            <h2 class="common-heading" data-aos="fade-down" data-aos-delay="1200">Contact Me</h2>
+            <div class="contact-form-container">
+                <form action="https://formspree.io/f/mvoygrlr" method="POST">
+                    <div class="grid grid-two-column">
+                        <div>
+                            <input type="text" id="username" placeholder="Your Name" required autocomplete="off" />
+                        </div>
+                        <div>
+                            <input type="email" id="email" placeholder="Your Email" required autocomplete="off" />
+                        </div>
+                    </div>
+                    <div>
+                        <input type="text" name="subject" placeholder="Subject" id="subject" required autocomplete="off" />
+                    </div>
+                    <div class="textarea-container">
+                        <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Write your message" required></textarea>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="textarea-bg">
+                            <path fill="rgba(0,0,0,0.2)" d="M0,192L480,224L960,160L1440,224L1440,320L960,320L480,320L0,320Z"></path>
+                        </svg>
+                    </div>
+                    <div class="submit-btn-container">
+                        <input type="submit" name="submit" id="submit" class="btn" value="Send Message" />
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
+    
    </main>
 
-   <!--Bio data section start-->
-   <section class="section-bio section">
-    <div class="container grid grid-two-column">
-        <div class="bio-img"><img src="Images/bio-img.jpg" alt="Bio-image"/></div>
-<!--bio right side-->
-        <div class="bio-data">
-            <h2 class="common-heading">my bio-data</h2>
-            <p>I am Debojyoti Suklabaidya with experience in designing, developing, and managing websites. I have a skilled in HTML, CSS, JavaScript, and web hosting. I am passionate about web development and enjoy working with users to create compelling, engaging websites. I am self-motivated and work well independently and as part of a team. I have good verbal and written communication skills and I possess strong project management skills with landing pages using HTML, CSS, JavaScript, and web technologies.</p>
-            <br/>
-            <p>Hence, it has allowed me to combine my diverse skill set to make the web a more user friendly and intuitive experience for everyone. I have worked and started my career in a firm for making account bills and the design for them, beside that I'm a Designer (as a teacher) in a school. later on I have shifted and work full time in Pharma company and till now I am working as a "Senior Field Manager" since 2018.</p>
-<!--bio bar-->
-            <div class="bio-data-stats">
-                <div class="bio-data-stats">
+   <!-- Footer Section -->
+   <footer class="section-footer section">
+       <div class="container grid grid-three-column">
+           <div class="f-about">
+               <h3>About</h3>
+               <p>
+                I’m a developer driven by a passion for crafting seamless, engaging, and user-centric digital experiences through code. Continuously learning and evolving, I am dedicated to turning ideas into impactful solutions.
+               </p>
+           </div>
 
-            <div class="bio-stats">
-                    <h3>Design</h3>
-                    <div class="bio-progress-bar">
-                        <span>50%</span>
-                    </div>
-                    </div>
+           <!-- <div class="f-links">
+               <h3>Links</h3>
+               <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#education">Education</a></li>
+                   <li><a href="projects.html">Projects</a></li>
+                   <li><a href="#contact">Contact</a></li>
+               </ul>
+           </div> -->
 
-            <div class="bio-stats">
-                <h3>HTML</h3>
-                <div class="bio-progress-bar bio-progress-2">
-                    <span>90%</span>
-                </div>
-                </div>
+           <div class="f-address">
+               <h3>Connection</h3>
+               <address>
+                   <p><span><ion-icon name="location-outline"></ion-icon></span> Silchar, India</p>
+                   <p><span><ion-icon name="call-outline"></ion-icon></span> <a href="tel:+919531100494">+91-9531100494</a></p>
+                   <p><span><ion-icon name="mail-outline"></ion-icon></span> <a href="mailto:suklabaidyad@gmail.com">suklabaidyad@gmail.com</a></p>
+               </address>
+           </div>
+       </div>
 
-            <div class="bio-stats">
-                <h3>CSS</h3>
-                <div class="bio-progress-bar bio-progress-3">
-                    <span>80%</span>
-                </div>
-                </div>
+       <div class="section-social-icon">
+           <div class="container">
+               <div class="f-social-icons">
+                   <a href="https://www.instagram.com/debojyotisb/"><ion-icon name="logo-instagram"></ion-icon></a>
+                   <!-- <a href="https://www.facebook.com/debojyotisuklabaidya"><ion-icon name="logo-facebook"></ion-icon></a> -->
+                   <a href="https://www.linkedin.com/in/debojyoti-suklabaidya-696a86219"><ion-icon name="logo-linkedin"></ion-icon></a>
+                   <!-- <a href="https://twitter.com/DSuklabaidya"><ion-icon name="logo-twitter"></ion-icon></a> -->
+               </div>
+           </div>
+       </div>
 
-            <div class="bio-stats">
-                <h3>JavaScript</h3>
-                <div class="bio-progress-bar bio-progress-4">
-                    <span>60%</span>
-                </div>
-                </div>
-
-                <div class="bio-stats">
-                    <h3>React JS</h3>
-                    <div class="bio-progress-bar bio-progress-5">
-                        <span>60%</span>
-                    </div>
-                    </div>
-
-            </div>
-            <div class="bio-data-btn">
-                <a href="#" class="btn Download CV-btn" onclick="document.location='https://drive.google.com/file/d/1LR87bK_HHbYobON2rqFT3c_Yiy14DJio/view'"><span>Download CV</span></a>
-            </div>
-        </div>
-    </div>
-   </section>
-
-<!-- projects section start -->
-<!-- <section class="section section-projects" id="projects-section">
-
-</section> -->
-
-<!-- our freelancing start -->
-<section class="section section-freelancing">
-    <div class="overlay"></div>
-    <div class="container">
-    <h2>I am <span>available</span> for freelancing</h2>
-    <p>I am motivated and hard worker but I have no experience in the field. And I am available to work on a project that is specific to your needs, I'll give my best.
-    </p>
-    <a href="/contact.html" class="btn"><span>Hire me</span></a>
-    </div>
-
-</section>
-
-
-
-
-<!-- contact section start -->
-<section class="section section-contact">
-    <div class="container">
-    <h2 class="common-heading">Contact Me</h2>
-    </div>
-
-    <div class="section-contect-main contact-container">
-    <form action="https://formspree.io/f/mvoygrlr"
-    method="POST">
-        <div class="grid grid-two-column">
-            <div>
-             <label for="username"></label>
-             <input 
-             type="text" 
-             id="username" 
-             placeholder="username"
-            required
-            autocomplete="off"
-             />
-            </div>
-            <div>
-                <label for="email"></label>
-                <input 
-                type="email" 
-                id="email" 
-                placeholder="user@mail.com"
-                required
-                autocomplete="off"
-                />
-            </div>
+       <div class="footer-bottom">
+        <p>&copy; Debojyoti Suklabaidya | All Rights Reserved</p>
         </div>
 
-            <div>
-                <label for="subject"></label>
-                <input 
-                type="text" 
-                name="subject" 
-                placeholder="subject" 
-                id="subject"
-                required
-                autocomplete="off"
-                />
-            </div>
-            <div>
-                <label for="textarea"></label>
-                <textarea 
-                name="message"
-                id="textarea"
-                cols="30"
-                rows="10"
-                placeholder="Write your message"
-                autocomplete="off"
-                required
-                min="10"
-                >
-                </textarea>
-            </div>
-            <div>
-                <input type="submit" name="submit" id="submit" class="btn" value="Send Message"/>
-            </div>
+   </footer>
 
-        </div>
-    </form>
-
-
-</section>
-
-<!-- footer section start -->
-<footer class="section-footer section">
-    <div class="container grid grid-three-column">
-        <div class="f-about">
-            
-            <h3>About</h3>
-            <p>I'm a developer, and I love it. I love being able to build things and see them come to life. I love being able to understand how code works and fixing things when they don't work right. And I love learning about new technology so that I cant incorporate it into what I do.</p>
-        </div>
-            <!-- end -->
-
-        <div class="f-links">
-            <h3>Links</h3>
-        <ul>
-            <li> <span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Home</a></li>
-            <li> <span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">About</a></li>
-            <li> <span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Education</a></li>
-            <li> <span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Projects</a></li>
-            <li> <span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Contact</a></li>
-        </ul>
-        
-        </div>
-        <!-- end -->
-            <div class="f-address">
-                <h3>Connection</h3>
-
-            <address>
-
-                <div>
-                <p>
-                    <span><ion-icon name="location-outline"></ion-icon></span>
-                Silchar, India
-                </p>
-                </div>
-                <div>
-                    <p>
-                        <span><ion-icon name="call-outline"></ion-icon></span> <a href="tel:+919531100494"> +91-9531100494 </a>
-                    </p>
-                </div>
-                <div>
-                    <p>
-            <span><ion-icon name="mail-outline"></ion-icon></span> <a href="mailto:suklabaidyad@gmail.com "> suklabaidyad@gmail.com </a> 
-                </p>
-            </div>
-            </address>
-        </div>
-        <!-- end -->
-    </div>
-
-                            <!-- f-social icon section start -->
-    <div class="section-social-icon section"
-            <div class="container">
-            <div class="f-social-icons">
-    <a href="https://www.instagram.com/debojyotisb/"><ion-icon name="logo-instagram"></ion-icon></a>
-
-    <a href="https://www.facebook.com/debojyotisuklabaidya"><ion-icon name="logo-facebook"></ion-icon></a>
-
-    <a href="https://www.linkedin.com/in/debojyoti-suklabaidya-696a86219"><ion-icon name="logo-linkedin"></ion-icon></a>
-
-    <a href="https://twitter.com/DSuklabaidya"><ion-icon name="logo-twitter"></ion-icon></a>
-            </div>
-
-        </div>
-    </div>
-</footer>
-
-
-
-    <script type="module" 
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
-        </script>
-    <script nomodule   
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
-         </script>
-    <script src="index.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+   <script>
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Only animate once while scrolling
+    });
+  </script>
+  
+   <script src="index.js"></script>
 </body>
 </html>
