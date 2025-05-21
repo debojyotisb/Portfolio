@@ -466,7 +466,7 @@ li {
 /* Project Section */
 
 .section-projects {
-    background: linear-gradient(to bottom right, rgba(34, 49, 63, 0.8), rgba(51, 105, 160, 0.8)), url('https://github.com/debojyotisb/Portfolio/Images/wave2.svg') no-repeat center bottom;
+    background: linear-gradient(to bottom right, rgba(34, 49, 63, 0.8), rgba(51, 105, 160, 0.8)), url('../Images/wave2.svg') no-repeat center bottom;
     background-blend-mode: overlay;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -562,7 +562,7 @@ li {
     left: 0;
     width: 100%;
     height: 200px;
-    background: url('https://github.com/debojyotisb/Portfolio/Images/wave.svg') no-repeat center bottom;
+    background: url('../Images/wave.svg') no-repeat center bottom;
     background-size: cover;
     z-index: 1;
 }
